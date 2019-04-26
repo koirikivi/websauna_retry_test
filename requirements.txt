@@ -1,0 +1,2 @@
+websauna[dev,celery,utils,notebook]
+-e ".[dev,test]"
