@@ -30,3 +30,15 @@ Verify
 1. Open http://localhost:6543/kaboom
 2. Refresh the page a couple of times
 3. If you see an internal server error each time, it is likely that retry support won't work correctly.
+
+Fix
+---
+
+    .. code-block:: shell
+
+        pip uninstall websauna
+        pip install -e "git+https://github.com/koirikivi/websauna.git@fix-view-retrying#egg=websauna"
+
+Then, restart the development server (`pserve`) and follow the steps in
+"Verify" again. You should still occassionally see the internal server error
+view, but most request should now not result in that view.
