@@ -1,7 +1,7 @@
 A tester for websauna retry support
 ===================================
 
-Automatic retrying on Postgresl Serialization Errors seems to be broken for websauna.
+Automatic retrying on PostgreSQL Serialization Errors (TransactionRollback) seems to be broken for Websauna.
 This app is a hacky way to verify the issue.
 
 Setup the app
