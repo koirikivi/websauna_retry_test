@@ -1,0 +1,6 @@
+{% extends "site/base.html" %}
+
+{% block content %}
+<p>Without correct retry support, there's a {{ chance }} chance to see this page instead of an internal server error view</p>
+<p>The transaction was attempted {{ attempt }} times ({{ (attempt - 1) }} retries)</p>
+{% endblock %}
